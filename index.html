@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой конструктор сайтов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top">
+        <h1>Конструктор сайтов</h1>
+        <p>Создай простую страницу без программирования</p>
+    </header>
+
+    <main class="layout">
+        <section class="panel">
+            <h2>Настройки сайта</h2>
+
+            <label for="siteTitle">Название сайта</label>
+            <input id="siteTitle" type="text" value="Мой первый сайт">
+
+            <label for="siteText">Описание сайта</label>
+            <textarea id="siteText" rows="4">Добро пожаловать на мой первый сайт!</textarea>
+
+            <label for="bgColor">Цвет фона</label>
+            <input id="bgColor" type="color" value="#f1f5f9">
+
+            <button id="updateButton">Обновить страницу</button>
+
+            <hr>
+
+            <h2>Добавить блок</h2>
+            <label for="blockText">Текст нового блока</label>
+            <textarea id="blockText" rows="3" placeholder="Введите текст блока"></textarea>
+            <button id="addButton">Добавить блок</button>
+            <button id="saveButton" class="secondary">Сохранить настройки</button>
+            <p id="message" class="message" aria-live="polite"></p>
+        </section>
+
+        <section class="preview-area">
+            <h2>Предварительный просмотр</h2>
+            <div id="preview" class="preview">
+                <h1 id="previewTitle">Мой первый сайт</h1>
+                <p id="previewText">Добро пожаловать на мой первый сайт!</p>
+                <div id="blocks"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>Учебный проект по дисциплине «Введение в профессию»</footer>
+    <script src="script.js"></script>
+</body>
+</html>
